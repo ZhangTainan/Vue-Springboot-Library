@@ -9,17 +9,17 @@ import com.example.demo.commom.Result;
 import com.example.demo.entity.BookWithUser;
 import com.example.demo.entity.BookWithUser;
 import com.example.demo.mapper.BookWithUserMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/bookwithuser")
+@RequestMapping("/api/bookwithuser")
 public class BookWithUserController {
-    @Resource
+    @Autowired
     BookWithUserMapper BookWithUserMapper;
 //
 //    @PostMapping
